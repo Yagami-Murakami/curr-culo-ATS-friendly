@@ -2,6 +2,8 @@
 
 Aplicação web que compara um currículo com uma descrição de vaga, calcula aderência ATS, identifica palavras-chave encontradas e ausentes e gera uma versão mais limpa do currículo sem inventar experiências.
 
+**Aplicação online:** https://yagami-murakami.github.io/curriculo-ats-friendly/
+
 ## Prévia
 
 ![JobMatch ATS](assets/preview-v2.svg)
