@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JobMatch ATS compara currículo e vaga, calcula aderência e gera uma versão ATS-friendly sem inventar experiências." />
+  <title>JobMatch ATS — Currículo alinhado à vaga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="JobMatch ATS">
+        <span class="brand-mark">JM</span>
+        <span><strong>JobMatch</strong><small>ATS</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#analisar">Analisar</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#seguranca">Regra de segurança</a>
+      </nav>
+      <a class="button button-secondary small" href="#analisar">Testar agora</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Currículo otimizado sem inventar experiência</div>
+          <h1>Descubra por que seu currículo pode estar sendo barrado pelo ATS.</h1>
+          <p>Compare seu currículo com uma vaga, veja o percentual de aderência, identifique palavras-chave ausentes e gere uma versão mais clara para sistemas de recrutamento.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#analisar">Analisar meu currículo</a>
+            <a class="button button-ghost" href="#como-funciona">Entender o processo</a>
+          </div>
+          <div class="trust-line"><span>✓</span> O sistema reorganiza e melhora a apresentação. Nunca cria experiência que não existe.</div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Prévia do painel de análise ATS">
+          <div class="glow"></div>
+          <div class="mock-card main-mock">
+            <div class="mock-top"><span>Resultado da análise</span><span class="status-dot"></span></div>
+            <div class="score-wrap">
+              <div class="score-ring"><span>78%</span></div>
+              <div><strong>Bom alinhamento</strong><p>Seu currículo já cobre boa parte da vaga.</p></div>
+            </div>
+            <div class="keyword-row"><span class="chip ok">JavaScript</span><span class="chip ok">Git</span><span class="chip miss">AWS</span><span class="chip miss">Docker</span></div>
+            <div class="mini-bars"><span style="width:86%"></span><span style="width:72%"></span><span style="width:58%"></span></div>
+          </div>
+          <div class="mock-card float-card one"><small>Palavras encontradas</small><strong>12</strong></div>
+          <div class="mock-card float-card two"><small>Faltando</small><strong>4</strong></div>
+        </div>
+      </section>
+
+      <section class="stats-strip reveal">
+        <div><strong>1</strong><span>análise completa</span></div>
+        <div><strong>3</strong><span>saídas úteis</span></div>
+        <div><strong>0</strong><span>experiências inventadas</span></div>
+      </section>
+
+      <section id="analisar" class="analyzer-section">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Análise prática</span>
+          <h2>Cole a vaga e o currículo. O resto acontece aqui.</h2>
+          <p>O processamento acontece no seu navegador. Nenhum dado é enviado para um servidor.</p>
+        </div>
+
+        <div class="input-grid reveal delay-1">
+          <article class="input-card">
+            <div class="card-heading"><span>01</span><div><h3>Descrição da vaga</h3><p>Cole responsabilidades, requisitos e diferenciais.</p></div></div>
+            <textarea id="jobText" spellcheck="true" placeholder="Ex.: Buscamos Analista de Suporte com experiência em Windows, Linux, redes TCP/IP, atendimento ao usuário, Active Directory e conhecimento em AWS..."></textarea>
+            <div class="field-footer"><span id="jobCount">0 caracteres</span><button class="link-button" id="sampleJob">Usar exemplo</button></div>
+          </article>
+
+          <article class="input-card">
+            <div class="card-heading"><span>02</span><div><h3>Seu currículo</h3><p>Cole somente informações verdadeiras sobre sua trajetória.</p></div></div>
+            <textarea id="resumeText" spellcheck="true" placeholder="Cole aqui o conteúdo do seu currículo: resumo, experiências, formação, cursos e habilidades..."></textarea>
+            <div class="field-footer"><span id="resumeCount">0 caracteres</span><button class="link-button" id="sampleResume">Usar exemplo</button></div>
+          </article>
+        </div>
+
+        <div class="analyze-bar reveal delay-2">
+          <div><strong>Pronto para comparar?</strong><span>O score considera palavras relevantes e termos técnicos da vaga.</span></div>
+          <button class="button button-primary button-large" id="analyzeBtn">Analisar compatibilidade</button>
+        </div>
+
+        <section id="results" class="results hidden" aria-live="polite">
+          <div class="results-header">
+            <div><span class="eyebrow">Resultado</span><h2>Seu diagnóstico ATS</h2></div>
+            <div class="score-box"><span id="scoreValue">0%</span><small id="scoreLabel">Aguardando</small></div>
+          </div>
+
+          <div class="result-grid">
+            <article class="result-card score-detail">
+              <h3>Aderência à vaga</h3>
+              <div class="progress-track"><span id="scoreBar"></span></div>
+              <p id="scoreMessage"></p>
+              <div class="metrics">
+                <div><strong id="foundCount">0</strong><span>encontradas</span></div>
+                <div><strong id="missingCount">0</strong><span>faltando</span></div>
+                <div><strong id="totalCount">0</strong><span>relevantes</span></div>
+              </div>
+            </article>
+
+            <article class="result-card">
+              <h3>Palavras-chave encontradas</h3>
+              <div class="chips" id="foundKeywords"></div>
+            </article>
+
+            <article class="result-card">
+              <h3>Palavras-chave ausentes</h3>
+              <p class="hint">Só inclua uma palavra se ela representar algo que você realmente sabe ou fez.</p>
+              <div class="chips" id="missingKeywords"></div>
+            </article>
+          </div>
+
+          <article class="ats-output">
+            <div class="output-head">
+              <div><span class="eyebrow">Versão ajustada</span><h2>Currículo ATS-friendly</h2><p>Texto limpo, objetivo e reorganizado sem adicionar experiências inexistentes.</p></div>
+              <div class="output-actions"><button class="button button-secondary" id="copyBtn">Copiar texto</button><button class="button button-primary" id="printBtn">Exportar PDF</button></div>
+            </div>
+            <pre id="optimizedResume"></pre>
+          </article>
+        </section>
+      </section>
+
+      <section id="como-funciona" class="how-section">
+        <div class="section-heading reveal"><span class="eyebrow">Como funciona</span><h2>Uma análise simples em quatro etapas.</h2></div>
+        <div class="steps">
+          <article class="step reveal"><span>1</span><h3>Leitura da vaga</h3><p>O sistema identifica termos técnicos e competências relevantes.</p></article>
+          <article class="step reveal delay-1"><span>2</span><h3>Comparação</h3><p>Os termos são comparados com o conteúdo real do seu currículo.</p></article>
+          <article class="step reveal delay-2"><span>3</span><h3>Diagnóstico</h3><p>Você vê score, palavras encontradas e lacunas.</p></article>
+          <article class="step reveal delay-3"><span>4</span><h3>Reorganização</h3><p>O currículo é limpo para leitura ATS sem inventar fatos.</p></article>
+        </div>
+      </section>
+
+      <section id="seguranca" class="principle-section reveal">
+        <div class="principle-icon">✓</div>
+        <div><span class="eyebrow">Princípio do produto</span><h2>O currículo fica melhor apresentado. A história continua sendo a sua.</h2><p>Palavras que não aparecem no currículo são listadas como lacunas. Elas não são inseridas automaticamente na versão ajustada, evitando atribuir ao candidato competências ou experiências que ele não declarou.</p></div>
+      </section>
+    </main>
+
+    <footer><div class="brand"><span class="brand-mark">JM</span><span><strong>JobMatch</strong><small>ATS</small></span></div><p>Ferramenta educacional para análise de aderência de currículo a vagas.</p></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
