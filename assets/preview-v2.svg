@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7F9FC"/><stop offset="1" stop-color="#EAF1FF"/></linearGradient>
+  <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2F6DF6"/><stop offset="1" stop-color="#1FC7D4"/></linearGradient>
+  <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dy="14" stdDeviation="18" flood-color="#102246" flood-opacity=".10"/></filter>
+</defs>
+<rect width="1400" height="900" fill="url(#bg)"/>
+<rect width="1400" height="78" fill="#FFFFFF" opacity=".9"/>
+<rect x="58" y="20" width="40" height="40" rx="12" fill="url(#b)"/><text x="78" y="46" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#fff">JM</text>
+<text x="112" y="39" font-family="Arial" font-size="20" font-weight="700" fill="#0B1630">JobMatch</text>
+<text x="112" y="56" font-family="Arial" font-size="9" font-weight="700" letter-spacing="3" fill="#69758D">ATS</text>
+<text x="1060" y="45" font-family="Arial" font-size="12" fill="#69758D">Analisar</text>
+<text x="1135" y="45" font-family="Arial" font-size="12" fill="#69758D">Como funciona</text>
+<text x="1240" y="45" font-family="Arial" font-size="12" fill="#69758D">Segurança</text>
+
+<text x="60" y="142" font-family="Arial" font-size="12" font-weight="700" letter-spacing="2" fill="#2F6DF6">CURRÍCULO OTIMIZADO SEM INVENTAR EXPERIÊNCIA</text>
+<text x="60" y="198" font-family="Arial" font-size="42" font-weight="800" fill="#0B1630">Descubra por que seu currículo</text>
+<text x="60" y="248" font-family="Arial" font-size="42" font-weight="800" fill="#0B1630">pode estar sendo barrado pelo ATS.</text>
+<text x="60" y="290" font-family="Arial" font-size="17" fill="#69758D">Compare currículo e vaga, identifique palavras-chave e melhore a apresentação.</text>
+<rect x="60" y="322" width="202" height="48" rx="13" fill="#2F6DF6"/><text x="161" y="352" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#fff">Analisar meu currículo</text>
+<rect x="278" y="322" width="180" height="48" rx="13" fill="#fff" stroke="#DDE4EF"/><text x="368" y="352" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#0B1630">Entender o processo</text>
+
+<g filter="url(#s)">
+<rect x="830" y="122" width="500" height="280" rx="24" fill="#fff" stroke="#DFE5EF"/>
+<text x="862" y="163" font-family="Arial" font-size="13" fill="#69758D">Resultado da análise</text>
+<text x="862" y="228" font-family="Arial" font-size="40" font-weight="800" fill="#0B1630">78%</text>
+<text x="960" y="212" font-family="Arial" font-size="22" font-weight="700" fill="#0B1630">Bom alinhamento</text>
+<text x="960" y="241" font-family="Arial" font-size="13" fill="#69758D">Seu currículo já cobre boa parte da vaga.</text>
+<rect x="862" y="276" width="75" height="30" rx="15" fill="#E9F8F1"/><text x="899" y="296" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">Linux</text>
+<rect x="946" y="276" width="78" height="30" rx="15" fill="#E9F8F1"/><text x="985" y="296" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">TCP/IP</text>
+<rect x="1033" y="276" width="58" height="30" rx="15" fill="#E9F8F1"/><text x="1062" y="296" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">Git</text>
+<rect x="1100" y="276" width="62" height="30" rx="15" fill="#FFF0F2"/><text x="1131" y="296" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#C74755">AWS</text>
+<rect x="1171" y="276" width="58" height="30" rx="15" fill="#FFF0F2"/><text x="1200" y="296" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#C74755">ITIL</text>
+<rect x="862" y="338" width="410" height="9" rx="5" fill="#EDF1F7"/><rect x="862" y="338" width="320" height="9" rx="5" fill="url(#b)"/>
+</g>
+
+<text x="60" y="488" font-family="Arial" font-size="11" font-weight="700" letter-spacing="2" fill="#2F6DF6">RESULTADO</text>
+<text x="60" y="532" font-family="Arial" font-size="34" font-weight="800" fill="#0B1630">Seu diagnóstico ATS</text>
+
+<g filter="url(#s)">
+<rect x="60" y="572" width="395" height="246" rx="22" fill="#fff" stroke="#DFE5EF"/>
+<text x="88" y="612" font-family="Arial" font-size="17" font-weight="700" fill="#0B1630">Aderência à vaga</text>
+<rect x="88" y="640" width="338" height="10" rx="5" fill="#EDF1F7"/><rect x="88" y="640" width="264" height="10" rx="5" fill="url(#b)"/>
+<text x="88" y="680" font-family="Arial" font-size="12" fill="#69758D">Boa aderência. Revise somente lacunas reais.</text>
+<rect x="88" y="715" width="92" height="68" rx="13" fill="#F7F9FC"/><text x="134" y="747" text-anchor="middle" font-family="Arial" font-size="21" font-weight="800" fill="#0B1630">9</text><text x="134" y="768" text-anchor="middle" font-family="Arial" font-size="10" fill="#69758D">encontradas</text>
+<rect x="194" y="715" width="92" height="68" rx="13" fill="#F7F9FC"/><text x="240" y="747" text-anchor="middle" font-family="Arial" font-size="21" font-weight="800" fill="#0B1630">3</text><text x="240" y="768" text-anchor="middle" font-family="Arial" font-size="10" fill="#69758D">faltando</text>
+<rect x="300" y="715" width="92" height="68" rx="13" fill="#F7F9FC"/><text x="346" y="747" text-anchor="middle" font-family="Arial" font-size="21" font-weight="800" fill="#0B1630">12</text><text x="346" y="768" text-anchor="middle" font-family="Arial" font-size="10" fill="#69758D">relevantes</text>
+</g>
+
+<g filter="url(#s)">
+<rect x="478" y="572" width="390" height="246" rx="22" fill="#fff" stroke="#DFE5EF"/>
+<text x="506" y="612" font-family="Arial" font-size="17" font-weight="700" fill="#0B1630">Palavras encontradas</text>
+<rect x="506" y="647" width="86" height="30" rx="15" fill="#E9F8F1"/><text x="549" y="667" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">Windows</text>
+<rect x="601" y="647" width="72" height="30" rx="15" fill="#E9F8F1"/><text x="637" y="667" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">Linux</text>
+<rect x="682" y="647" width="78" height="30" rx="15" fill="#E9F8F1"/><text x="721" y="667" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">Redes</text>
+<rect x="506" y="690" width="68" height="30" rx="15" fill="#E9F8F1"/><text x="540" y="710" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">VPN</text>
+<rect x="583" y="690" width="58" height="30" rx="15" fill="#E9F8F1"/><text x="612" y="710" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">Git</text>
+<rect x="650" y="690" width="94" height="30" rx="15" fill="#E9F8F1"/><text x="697" y="710" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#138A63">Suporte</text>
+</g>
+
+<g filter="url(#s)">
+<rect x="892" y="572" width="438" height="246" rx="22" fill="#fff" stroke="#DFE5EF"/>
+<text x="920" y="612" font-family="Arial" font-size="17" font-weight="700" fill="#0B1630">Palavras ausentes</text>
+<rect x="920" y="647" width="62" height="30" rx="15" fill="#FFF0F2"/><text x="951" y="667" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#C74755">AWS</text>
+<rect x="992" y="647" width="62" height="30" rx="15" fill="#FFF0F2"/><text x="1023" y="667" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#C74755">ITIL</text>
+<rect x="1064" y="647" width="145" height="30" rx="15" fill="#FFF0F2"/><text x="1136" y="667" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#C74755">Active Directory</text>
+<text x="920" y="721" font-family="Arial" font-size="12" fill="#69758D">Só inclua termos que representem experiências</text>
+<text x="920" y="741" font-family="Arial" font-size="12" fill="#69758D">ou conhecimentos reais.</text>
+</g>
+</svg>
