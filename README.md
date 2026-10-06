@@ -6,7 +6,7 @@ Aplicação web que compara um currículo com uma descrição de vaga, calcula a
 
 ## Prévia
 
-![JobMatch ATS](assets/preview-v2.svg)
+![JobMatch ATS](assets/preview-v3.svg)
 
 ## Problema que resolve
 
